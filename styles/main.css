@@ -204,3 +204,10 @@ input[type=range]:focus::-ms-fill-upper {
 
 
 /* Slider code ends here */
+
+@media (max-width: 700px) {
+    main {
+        padding: 20px;
+        gap: 20px;
+    }
+}
