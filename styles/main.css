@@ -74,11 +74,19 @@ main .panel button {
     border: 3px solid var(--maize-crayola);
     border-radius: 4px;
     background-color: transparent;
-    color: #E8C547;
+    color: var(--maize-crayola);
     font-family: var(--amatic-sc);
     font-size: xx-large;
-    box-shadow: 0px 0px 16px 1px var(--maize-crayola);
     cursor: pointer;
+}
+
+main .panel button:hover {
+    box-shadow: 0px 0px 16px 1px var(--maize-crayola);
+}
+
+main .panel .btn-active {
+    color: var(--independence);
+    background-color: var(--maize-crayola);
 }
 
 main .panel label {
