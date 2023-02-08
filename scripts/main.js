@@ -32,14 +32,17 @@ function addSquaresListeners() {
             if (mouseDown) {
                 if (btnDraw.classList.contains('btn-active')) {
                     square.style.backgroundColor = colorPicker.value;
+                    square.style.filter = 'brightness(1.001)';
                 } else if (btnErase.classList.contains('btn-active')) {
                     square.style.backgroundColor = 'rgb(255, 255, 255)';
+                    square.style.filter = 'brightness(1.001)';
                 } else if (btnShade.classList.contains('btn-active')) {
                     let brightness = square.style.filter;
                     let brightnessValue = +brightness.slice(11, 14) - 0.1;
                     square.style.filter = `brightness(${brightnessValue})`;
                 } else if (btnRainbow.classList.contains('btn-active')) {
                     square.style.backgroundColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+                    square.style.filter = 'brightness(1.001)';
                 }
             }
         });
@@ -47,14 +50,17 @@ function addSquaresListeners() {
         square.addEventListener('click', () => {
             if (btnDraw.classList.contains('btn-active')) {
                 square.style.backgroundColor = colorPicker.value;
+                square.style.filter = 'brightness(1.001)';
             } else if (btnErase.classList.contains('btn-active')) {
                 square.style.backgroundColor = 'rgb(255, 255, 255)';
+                square.style.filter = 'brightness(1.001)';
             } else if (btnShade.classList.contains('btn-active')) {
                 let brightness = square.style.filter;
                 let brightnessValue = +brightness.slice(11, 14) - 0.1;
                 square.style.filter = `brightness(${brightnessValue})`;
             } else if (btnRainbow.classList.contains('btn-active')) {
                 square.style.backgroundColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+                square.style.filter = 'brightness(1.001)';
             }
         });
 
